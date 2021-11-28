@@ -32,7 +32,7 @@ valid_comments= 507
 
 | Task                                                                          | Grade       |
 | :---                                                                          |    :----:   |
-| All tasks in `bot.py` file                                                    | 18          |
+| Complete all tasks in `bot.py` file                                           | 18          |
 | GitHub repo                                                                   | 2           |
 | 1. Getting at least 100 valid comments posted                                 | 2           |
 | 2. Getting at least 500 valid comments posted                                 | 2           |
