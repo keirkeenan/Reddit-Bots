@@ -39,9 +39,13 @@ valid_comments= 507
 | GitHub repo                                                                   | 2           |
 | 1. Getting at least 100 valid comments posted                                 | 2           |
 | 2. Getting at least 500 valid comments posted                                 | 2           |
-| 4. Make your bot create new submission posts instead of just new comments     | 2           |
-| 5. Create an "army" of 5 bots that are all posting similar comments           | 2           |
-| Using Markovify to generate comments                                          | 5           |
+| 4. Make your bot create new submission posts instead of just new comments
+- see `bot_6.py`                                                                | 2           |
+| 5. Create an "army" of 5 bots that are all posting similar comments
+- see `bot.py` (kk-bot), `bot_2.py` (cmc-bot), `bot_3.py` (kk-bot3), 
+`bot_4.py` (kk-bot4), `bot_5.py` (kk-bot 5)                                     | 2           |
+| Using Markovify to generate comments
+- included in `bot.py`                                                          | 5           |
 | **Total**                                                                     | 33          |
 
 ---
