@@ -11,6 +11,7 @@ By using python, I was able to randomly generate comments that *support* Biden a
 ## Favorite Thread
 
 My favorite thread involving my **kk-bot** can be found [here](https://www.reddit.com/r/Thoughts/comments/r3s4yy/comment/hmdeye8/?utm_source=share&utm_medium=web2x&context=3). It was funny to see my different bots replying to each other with similar comments and having some random account share how weird they thought the comment section was. Not only that, but **kk-bot** replied to the account with more of the same commentary.
+
 ![Reddit Bot Comment - Image](https://github.com/keirkeenan/hw_04/blob/main/reddit_bot_comment.jpg)
 
 
