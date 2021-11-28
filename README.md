@@ -8,6 +8,7 @@
 
 By using python, I was able to randomly generate comments that *support* Biden and *oppose* Trump. Reddit bots were used to submit these comments in the form of posts, comments, and replies. It is amazing how easily misinformation can spread, and this project highlights the deceptive nature of highly commented and upvoted posts. It leads us to ask some important questions. How much can we really trust popular posts on Reddit or other forms of social media? To what extent can bots guide public perception?
 
+
 ## Favorite Thread
 
 My favorite thread involving my **kk-bot** can be found [here](https://www.reddit.com/r/Thoughts/comments/r3s4yy/comment/hmdeye8/?utm_source=share&utm_medium=web2x&context=3). It was funny to see my different bots replying to each other with similar comments and having some random account share how weird they thought the comment section was. Not only that, but **kk-bot** replied to the account with more of the same commentary.
@@ -28,6 +29,7 @@ len(valid_replies)= 437
 valid_comments= 507
 ========================================
 ```
+
 
 ## Grade
 
