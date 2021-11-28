@@ -2,47 +2,27 @@ import praw
 import random
 import datetime
 import time
+import markovify
 
-# FIXME:
-# copy your generate_comment function from the madlibs assignment here
+# Use Markovify to generate comment
 
-madlibs = [
-    "Obama was such a [GOOD] president! Hope we have someone like him [AGAIN].",
-    "I wish we had a [GOOD] president for once, it's been [A_WHILE].",
-    "Trump was one of the [WORST] presidents we've ever had.",
-    "So many politicians are [CROOKS]!",
-    "This country needs a [NEW] president. Period.",
-    "I hope this presidency has a [NEW] plan for this country.",
-    ]
+# Get raw text as string.
+with open("trump_corpus.txt", encoding="utf8") as f:
+    text = f.read()
 
-replacements = {
-    'GOOD' : ['good', 'magnificent', 'fantastic', 'wonderful'],
-    'AGAIN' : ['again', 'soon', 'fast', 'before long'],
-    'A_WHILE' : ['a while', 'a long time', 'too long'],
-    'WORST' : ['worst', 'most terrible', 'most clueless'],
-    'CROOKS' : ['crooks', 'bad', 'evil'],
-    'NEW' : ['new', 'different', 'better', 'stronger'],
-    }
+# Seed Random with date
+random.seed(datetime.datetime.now())
 
+# Build the model
+text_model = markovify.Text(text, state_size=2)
+
+# find random thing to tweet
 def generate_comment():
-    '''
-    This function generates random comments according to the patterns specified in the `madlibs` variable.
-
-    To implement this function, you should:
-    1. Randomly select a string from the madlibs list.
-    2. For each word contained in square brackets `[]`:
-        Replace that word with a randomly selected word from the corresponding entry in the `replacements` dictionary.
-    3. Return the resulting string.
-
-    For example, if we randomly seleected the madlib "I [LOVE] [PYTHON]",
-    then the function might return "I like Python" or "I adore Programming".
-    Notice that the word "Programming" is incorrectly capitalized in the second sentence.
-    You do not have to worry about making the output grammatically correct inside this function.
-    '''
-    comment = random.choice(madlibs)
-    for key in replacements:
-        w = random.choice(replacements[key])
-        comment = comment.replace('[' + key + ']',w)
+    list_poss_tweets = []
+    for i in range(0, 100):
+        new_sentence = text_model.make_short_sentence(140)
+        list_poss_tweets.append(new_sentence)
+        comment = random.choice(list_poss_tweets)
     return comment
 
 # FIXME:
