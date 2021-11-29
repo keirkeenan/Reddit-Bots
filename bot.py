@@ -155,7 +155,7 @@ while True:
     
     try:
         hot_subs = []
-        for submission in reddit.subreddit('thoughts').hot(limit=5):
+        for submission in reddit.subreddit('BotTownHW4').hot(limit=5):
             hot_sub = hot_subs.append(submission.url)
         submission_url = str(random.choice(hot_subs))
         submission = reddit.submission(url=submission_url)
